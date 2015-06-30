@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>Discount Ascii Warehouse</title>
+        <base href="/">
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.1.1/flexboxgrid.min.css" type="text/css" />
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <div>
+            <div class="header" ui-view="header"></div>
+            <div class="content" ui-view="content"></div>
+        </div>
+    </body>
+
+    <!-- vendor -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/oboe/dist/oboe-browser.min.js"></script>
+
+    <!-- application -->
+    <script src="/app/app.module.js"></script>
+
+    <script src="/app/config/router/router.module.js"></script>
+    <script src="/app/config/router/router.js"></script>
+
+    <script src="/app/data/data.module.js"></script>
+    <script src="/app/data/data.js"></script>
+
+    <script src="/app/components/directives.module.js"></script>
+    <script src="/app/components/directive.whenNearingEnd.js"></script>
+
+    <script src="/app/header/header.module.js"></script>
+    <script src="/app/header/header.route.js"></script>
+
+    <script src="/app/products/products.module.js"></script>
+    <script src="/app/products/products.route.js"></script>
+    <script src="/app/products/products.js"></script>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "discount-ascii-warehouse",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "1.3.16",
+    "angular-ui-router": "0.2.15",
+    "jquery": "2.1.4",
+    "oboe": "2.0.0"
+  }
+}

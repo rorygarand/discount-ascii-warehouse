@@ -1,0 +1,25 @@
+<section>
+    <div class="row" when-nearing-end="vm.fetchProducts()">
+        <div class="box item" ng-repeat-start="p in vm.products track by p.id">
+            <div class="face" ng-style="{'font-size':p.size+'px'}">{{::p.face}}</div>
+            <div class="price">{{::p.price / 100 | currency:"$":2}}</div>
+        </div>
+        <div class="box ad" ng-if="::vm.showAd($index+1)" ng-repeat-end>
+            <img ng-src="/ad/?r={{::vm.randomArray[($index+1)/20]}}"/>
+        </div>
+        <div class="col-xs-12 banner">
+            <span class="center" ng-if="!vm.finished"><img class="loading-gif" src="/styles/images/loading.gif"/> loading...</span>
+            <span class="center" ng-if="vm.finished">~ end of catalogue ~</span> 
+        </div>
+    </div>
+    <div class="sort">
+        <div><h2>Sort</h2></div>
+        <div>
+            <select ng-model="vm.sortVal" ng-change="vm.sort()">
+                <option value="id">id</option>
+                <option value="price">price</option>
+                <option value="size">size</option>
+            </select>
+        </div>
+    </div>
+</section>
