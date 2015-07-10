@@ -1,11 +1,11 @@
 Discount Ascii Warehouse
 ====
 
+[Working Demo](http://ascii.rorygarand.com)
+
 This is an ecommerce site, where you can buy all sorts of ascii faces like `(ノ・∀・)ノ` and `¯_(ツ)_/¯`, in a wide variety of font sizes. The homepage should display a list of products for people to browse.
 
 The application is atypical in that responses are returned in newline delimited json. The data service uses [Oboe.js](http://oboejs.com) to parse json as a stream. The factory/service code was heavily inspired by [angular-oboe](https://github.com/RonB/angular-oboe). Thanks RonB!
-
-[Working Demo](http://ascii.rorygarand.com)
 
 Info
 ----
