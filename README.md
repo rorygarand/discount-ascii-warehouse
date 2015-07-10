@@ -42,6 +42,20 @@ Ads
 - An "advertisement" is inserted after every 20 products. The `?r` query param is randomly generated each time an ad is displayed.
 - Ads are randomly selected, but a user must never see the same ad twice in a row.
 
+Dependencies
+----
+
+### Node
+
+- [cool-ascii-faces](https://github.com/maxogden/cool-ascii-faces)
+- [ecstatic](https://github.com/jfhbrook/node-ecstatic)
+
+### Angular
+
+- [ui-router](https://github.com/angular-ui/ui-router)
+- [jquery](https://jquery.com/download)
+- [oboe](https://github.com/jimhigson/oboe.js)
+
 Todo List
 ----
 
