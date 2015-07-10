@@ -5,12 +5,14 @@ This is an ecommerce site, where you can buy all sorts of ascii faces like `(ノ
 
 The application is atypical in that responses are returned in newline delimited json. The data service uses [Oboe.js](http://oboejs.com) to parse json as a stream. The factory/service code was heavily inspired by [angular-oboe](https://github.com/RonB/angular-oboe). Thanks RonB!
 
+[Working Demo](http://ascii.rorygarand.com)
+
 Info
 ----
 
 ### How do I start the app?
 
-Start with `node index.js`. The server will look for any files you add to the `static/` directory.
+Start with `node index.js`.
 
 
 Requirements
@@ -37,5 +39,12 @@ Products API
 Ads
 ----
 
-- Insert an advertisement from one of our sponsors after every 20 products. Make sure the `?r` query param is randomly generated each time an ad is displayed.
-- Ads should be randomly selected, but a user must never see the same ad twice in a row.
+- Insert an advertisement after every 20 products. T `?r` query param is randomly generated each time an ad is displayed.
+- Ads are randomly selected, but a user must never see the same ad twice in a row.
+
+Todo List
+----
+
+- Add tests.
+- Destroy products in the DOM at the top of the list as the page scrolls down. 
+- Change 'whenNearingEnd' directive to load more products whenever the loading bar is on the screen, rather than watching the bottom of the screen.
